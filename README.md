@@ -9,8 +9,11 @@ venv\Scripts\activate.bat
 2) Клонируем репозиторий в папку:
 git clone "https://github.com/KAndreyV/website_for_Silant.git"
 
-3) Перейдем в папку website_for_silant командой:
+3) Перейдем в папку silant_app командой
+
 cd website_for_silant
+
+cd silant_app
 
 4) Устанавливаем все библиотеки из файла requierements:
 pip install -r requirements.txt
