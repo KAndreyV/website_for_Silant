@@ -19,7 +19,7 @@ git clone "https://github.com/KAndreyV/website_for_Silant.git"
 
 4) Перейдем в папку silant_app командой
 
-cd website_for_silant
+cd website_for_Silant
 
 cd silant_app
 
@@ -29,6 +29,10 @@ SECRET_KEY = "Возьмите эту строку из созданного в�
 
 6) Устанавливаем все библиотеки из файла requierements:
 pip install -r requirements.txt
+
+7) Устанавливаем миграции:
+
+python manage.py migrate
 
 7) Можем запускать django сервер:
 python manage.py runserver
