@@ -6,6 +6,14 @@ python -m venv venv
 
 venv\Scripts\activate.bat
 
+2) Установите Django==3.2.19:
+
+pip install Django==3.2.19
+
+И создайте django проект:
+
+django-admin startproject silant_app
+
 2) Клонируем репозиторий в папку:
 git clone "https://github.com/KAndreyV/website_for_Silant.git"
 
