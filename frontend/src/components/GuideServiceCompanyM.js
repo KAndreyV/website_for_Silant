@@ -4,7 +4,7 @@ import axios from "axios";
 import Table from 'react-bootstrap/Table'
 
 
-function GuideServiceCompanyC(props) {
+function GuideServiceCompanyM(props) {
     const [response1, setResponse] = React.useState([]);
     let [requested, serviceCompanyReq] = React.useState(false);
     
@@ -24,7 +24,7 @@ function GuideServiceCompanyC(props) {
      
     for(let i=0; i < response1.length; i+=1){
         let model = response1[i];
-        if(props.complaint.service_company === model.name){
+        if(props.maintenance.service_company === model.name){
             service_company = model;
         };
     };
@@ -46,4 +46,4 @@ function GuideServiceCompanyC(props) {
     );
 }
 
-export default GuideServiceCompanyC;
+export default GuideServiceCompanyM;
