@@ -12,31 +12,35 @@ pip install Django==3.2.19
 
 И создайте django проект:
 
-django-admin startproject silant_app
+django-admin startproject silant_app1
 
-2) Клонируем репозиторий в папку:
+3) Клонируем репозиторий в папку:
 git clone "https://github.com/KAndreyV/website_for_Silant.git"
 
-3) Перейдем в папку silant_app командой
+4) Перейдем в папку silant_app командой
 
 cd website_for_silant
 
 cd silant_app
 
-4) Устанавливаем все библиотеки из файла requierements:
+5) Создадим файл .env и добавим в него строку 
+
+SECRET_KEY = "Возьмите эту строку из созданного вами проекта silant_app1 из файла settings"
+
+5) Устанавливаем все библиотеки из файла requierements:
 pip install -r requirements.txt
 
-5) Можем запускать django сервер:
+6) Можем запускать django сервер:
 python manage.py runserver
 
-6) Для работы визуальной части приложения переходим в папку frontend во втором терминале или другом IDE:
+7) Для работы визуальной части приложения переходим в папку frontend во втором терминале или другом IDE:
 cd frontend
 
-7) Устанавливаем все необходимое командой:
+8) Устанавливаем все необходимое командой:
 npm i
 
-8) Добавляем файл .babelrc со следующим содержимым:
+9) Добавляем файл .babelrc со следующим содержимым:
 { "presets": ["@babel/preset-env", "@babel/preset-react"] }
 
-9) Можем запускать react-сервер:
+10) Можем запускать react-сервер:
 npm start
