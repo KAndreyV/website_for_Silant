@@ -19,7 +19,7 @@ cd silant_app
 pip install -r requirements.txt
 
 5) Можем запускать django сервер:
-python3 manage.py runserver
+python manage.py runserver
 
 6) Для работы визуальной части приложения переходим в папку frontend во втором терминале или другом IDE:
 cd frontend
