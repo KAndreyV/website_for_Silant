@@ -51,6 +51,7 @@ function GuidesMachine() {
                 <Link className="btn-primary" to="http://localhost:8080/">Общая информация</Link>
                 <Link className="btn-primary" to="http://localhost:8080/maintenances">То</Link>
                 <Link className="btn-primary" to="http://localhost:8080/complaints">Рекламации</Link>
+                <Link className="btn-primary" to="http://localhost:8080/login">Мой профиль</Link> 
             </div>
             <p>Справочники машины</p>
             <div className='guides'>

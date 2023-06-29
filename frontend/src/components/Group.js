@@ -7,7 +7,7 @@ function Group(props) {
 
     return (
         <>    
-            <Header token={props.token}/>
+            <Header />
             <Footer />
         </>
     );

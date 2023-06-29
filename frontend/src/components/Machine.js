@@ -6,15 +6,9 @@ import "../styles/Machine.css"
 
 
 function Machine(props) {
-    const navigate = useNavigate();
-
-    const handleClick = () => {
-        navigate(`/guides/machines/${props.machine.id}`);
-    };
-
     return(
         <>
-            <tr key={props.machine.id} onClick={handleClick}>
+            <tr key={props.machine.id}>
                 <td>{props.machine.technic_model}</td>
                 <td>{props.machine.machine_factory_number}</td>
                 <td>{props.machine.engine_model}</td>
@@ -25,13 +19,6 @@ function Machine(props) {
                 <td>{props.machine.driving_bridge_factory_number}</td>
                 <td>{props.machine.controlled_bridge_model}</td>
                 <td>{props.machine.controlled_bridge_factory_number}</td>
-                <td>{props.machine.delivery_contract}</td>
-                <td>{props.machine.shipment_date}</td>
-                <td>{props.machine.client}</td>
-                <td>{props.machine.consignee}</td>
-                <td>{props.machine.delivery_address}</td>
-                <td>{props.machine.equipment}</td>
-                <td>{props.machine.service_company}</td>
             </tr>
         </>
     );

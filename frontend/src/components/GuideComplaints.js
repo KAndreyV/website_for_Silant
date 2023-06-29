@@ -49,6 +49,7 @@ function GuideComplaints() {
                 <Link className="btn-primary" to="http://localhost:8080/">Общая информация</Link>
                 <Link className="btn-primary" to="http://localhost:8080/maintenances">То</Link>
                 <Link className="btn-primary" to="http://localhost:8080/complaints">Рекламации</Link>
+                <Link className="btn-primary" to="http://localhost:8080/login">Мой профиль</Link> 
             </div>
             <p>Справочники рекламаций</p>
             <div className='guides'>

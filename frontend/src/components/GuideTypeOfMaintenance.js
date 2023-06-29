@@ -32,15 +32,15 @@ function GuideTypeOfMaintenance(props) {
     return(
         <>
             <Table>
-            <thead>
-                        <tr>
-                            <th>Вид ТО</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td>Название: {type_of_maintenance.name}</td></tr>
-                        <tr><td>Описание: {type_of_maintenance.description}</td></tr>
-                    </tbody>
+                <thead>
+                    <tr>
+                        <th>Вид ТО</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Название: {type_of_maintenance.name}</td></tr>
+                    <tr><td>Описание: {type_of_maintenance.description}</td></tr>
+                </tbody>
             </Table>
         </>
     );

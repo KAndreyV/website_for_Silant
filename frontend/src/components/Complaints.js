@@ -53,11 +53,6 @@ function Complaints(props) {
     return (
         <>
             <div className='button'><button onClick={handleSubmitChange}>Найти</button></div>
-            <div className="links">
-                <Link className="btn-primary" to="http://localhost:8080/">Общая информация</Link>
-                <Link className="btn-primary" to="http://localhost:8080/maintenances">То</Link>
-                <Link className="btn-primary" to="http://localhost:8080/complaints">Рекламации</Link>
-            </div>
             <p>Информация о рекламациях</p>
             {nothing ?
                 <p className='nothing_found'>По вашему запросу ничего не найдено</p>:

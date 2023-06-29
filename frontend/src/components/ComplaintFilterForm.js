@@ -6,8 +6,10 @@ import RecoveryMethod from "./RecoveryMethod";
 import FailureNode from "./FailureNode";
 import ServiceCompany from "./ServiceCompany";
 
+import { Link, } from "react-router-dom";
 
-function ComplaintFilterForm() {
+
+function ComplaintFilterForm(props) {
     const [valueFN, setValueFN] = useState('');
     const [valueRM, setValueRM] = useState('');
     const [valueSC, setValueSC] = useState('');
@@ -28,6 +30,13 @@ function ComplaintFilterForm() {
 
     return(
         <>
+            <p>{props.role}: {props.firstName}</p>
+            <div className="links">
+                <Link className="btn-primary" to="http://localhost:8080/">Общая информация</Link>
+                <Link className="btn-primary" to="http://localhost:8080/maintenances">То</Link>
+                <Link className="btn-primary" to="http://localhost:8080/complaints">Рекламации</Link>
+                <Link className="btn-primary" to="http://localhost:8080/login">Мой профиль</Link> 
+            </div>
             <form>
                 <p>
                     <label>

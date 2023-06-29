@@ -21,10 +21,6 @@ function Header(props) {
                     <p>
                         +7-8352-20-12-09, telegram
                     </p>
-                    {props.token ?
-                        <Link to="http://127.0.0.1:8000/accounts/logout/" className="links" >Выйти</Link>:
-                        <Link to="http://127.0.0.1:8080/login/" className="links" >Авторизоваться</Link>    
-                    }
                 </div>
                 <div>
                     <p className="header_text">

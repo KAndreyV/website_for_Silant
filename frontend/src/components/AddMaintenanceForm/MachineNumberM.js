@@ -32,13 +32,9 @@ function MachineNumberM( props ) {
         first_machine = response1[0];
     };
 
-    if(requested === true){
-        props.handleMachinesChange(machines);
-    };
-
-    if(valueM === ''){
-        // props.onChange(first_machine.id);
-    }
+    // if(requested === true){
+    //     props.handleMachinesChange(machines);
+    // };
 
     machine_numbers.unshift(' ---------------- ');
 
@@ -51,7 +47,6 @@ function MachineNumberM( props ) {
     const handleMachineChange = (event) => {
         setValueM(event.target.value);
         if('----------------' === event.target.value){
-            // props.onChange(first_machine.id);
             props.onChange('');
         }else{
             for(let i=0; i < response1.length; i+=1){

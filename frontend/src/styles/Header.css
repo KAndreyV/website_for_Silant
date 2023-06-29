@@ -31,7 +31,7 @@ p{
     display: flex;
     align-items: center;
     align-content: space-between;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .textLogo{
@@ -47,4 +47,10 @@ p{
 .links{
     color: #163E6C;
     font-family: "PT-Astra-Sans_Bold-Italicr";
+}
+
+
+.Logo{
+    position: absolute;
+    left: 0;
 }
