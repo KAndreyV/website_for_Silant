@@ -1,4 +1,4 @@
-from rest_framework import viewsets
+from rest_framework import viewsets, permissions, status
 import django_filters
 from .serializers import *
 from .models import *
@@ -9,7 +9,8 @@ from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.authentication import TokenAuthentication
 from rest_framework import filters
 from rest_framework.authtoken.models import Token
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, login, logout
+from rest_framework.views import APIView
 
 
 @api_view(['POST'])
@@ -34,6 +35,14 @@ def user(request: Request):
     return Response({
         'data': UserSerializer(request.user).data
     })
+
+
+class UserLogout(APIView):
+    permission_classes = (permissions.AllowAny,)
+    authentication_classes = ()
+    def post(self, request):
+        logout(request)
+        return Response(status=status.HTTP_200_OK)
 
 
 class ServiceCompanyViewset(viewsets.ModelViewSet):
@@ -123,7 +132,9 @@ class MachineViewset(viewsets.ModelViewSet):
         "engine_model",
         "transmission_model",
         "driving_bridge_model",
-        "controlled_bridge_model"
+        "controlled_bridge_model",
+        "client",
+        "service_company"
     ]
     # search_fields = ['machine_factory_number']
     ordering_fields = ["-shipment_date"]

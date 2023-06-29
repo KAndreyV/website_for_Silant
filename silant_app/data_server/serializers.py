@@ -93,7 +93,6 @@ class FailureNodeSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class MachineSerializer(serializers.HyperlinkedModelSerializer):
-    machine_factory_number = serializers.StringRelatedField()
     service_company = serializers.StringRelatedField()
     technic_model = serializers.StringRelatedField()
     engine_model = serializers.StringRelatedField()
@@ -143,6 +142,13 @@ class MaintenanceSerializer(serializers.HyperlinkedModelSerializer):
                   'machine',
                   'service_company',
                   ]
+
+    # def to_representation(self, instance):
+    #     rep = super().to_representation(instance)
+    #     rep['machine'] = MachineSerializer(instance.machine).data
+    #     # rep['service_company'] = ServiceCompanySerializer(instance.service_company).data.name
+    #     return rep
+
 
 
 class ComplaintsSerializer(serializers.HyperlinkedModelSerializer):

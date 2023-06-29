@@ -43,5 +43,6 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('api/user', user, name='user'),
     path('api/login', issue_token, name='issue_token'),
+    path('api/logout', UserLogout.as_view(), name='logout'),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
